@@ -1,12 +1,17 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
+import Head from 'next/head'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <main className='flex min-h-screen flex-col items-center justify-between p-24'>
+      <Head>
+        <title>Notflix</title>
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+      </Head>
       <div>
         <div id='backdrop'>
           <Image className='w-full h-auto object-cover' fill src='/backdrop.jpeg' alt='backdrop' />
@@ -38,10 +43,10 @@ export default function Home() {
         </div>
         <div
           id='login-body'
-          className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-[-30px]'>
+          className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:mt-[-30px] mt-0 sm:h-auto h-full'>
           <div
             style={{ minWidth: 'min(100vw, 450px)' }}
-            className='flex top-0 left-0 w-full h-full flex flex-col items-center text-center p-16 bg-black bg-opacity-75 rounded min-h-[660px] min-w-[450px] max-w-md'>
+            className='flex top-0 left-0 h-full flex flex-col items-center text-center p-16 bg-black bg-opacity-75 rounded min-h-[660px] max-w-md w-full'>
             <h1 className='text-white text-3xl font-medium mb-7 text-left w-full'>Sign In</h1>
             <div className='relative w-full pb-4'>
               <input
@@ -58,7 +63,7 @@ export default function Home() {
               />
               <label className='absolute top-1 left-5 text-[11px]	text-black'>Password</label>
             </div>
-            <Link href='/browse' className='bg-[#e50914] text-white text-sm font-medium rounded h-12 w-full mt-4 p-3'>
+            <Link href='/profiles' className='bg-[#e50914] text-white text-sm font-medium rounded h-12 w-full mt-4 p-3'>
               <span>Sign In</span>
             </Link>
             <div className='flex items-center justify-between w-full mt-4'>

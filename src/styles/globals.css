@@ -19,10 +19,13 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.avatar-logo:hover p {
+  color: white;
+}
+
+.avatar-logo:hover img {
+  outline: 3px solid white;
 }
