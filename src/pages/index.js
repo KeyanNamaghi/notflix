@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -57,9 +58,9 @@ export default function Home() {
               />
               <label className='absolute top-1 left-5 text-[11px]	text-black'>Password</label>
             </div>
-            <a href='/browse' className='bg-[#e50914] text-white text-sm font-medium rounded h-12 w-full mt-4 p-3'>
+            <Link href='/browse' className='bg-[#e50914] text-white text-sm font-medium rounded h-12 w-full mt-4 p-3'>
               <span>Sign In</span>
-            </a>
+            </Link>
             <div className='flex items-center justify-between w-full mt-4'>
               <div className='flex items-center'>
                 <input type='checkbox' className='h-4 w-4' />
