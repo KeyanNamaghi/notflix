@@ -8,6 +8,26 @@ export default function Profiles() {
       <Head>
         <title>Notflix</title>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <link rel='preload' href='/content/28daysLater.webp' as='image' />
+        <link rel='preload' href='/content/500DaysOfSummer.webp' as='image' />
+        <link rel='preload' href='/content/IT.webp' as='image' />
+        <link rel='preload' href='/content/arrival.webp' as='image' />
+        <link rel='preload' href='/content/chariotsOfFire.webp' as='image' />
+        <link rel='preload' href='/content/chungkingExpress.webp' as='image' />
+        <link rel='preload' href='/content/hotFuzz.webp' as='image' />
+        <link rel='preload' href='/content/interstellar.webp' as='image' />
+        <link rel='preload' href='/content/liloAndStitch.webp' as='image' />
+        <link rel='preload' href='/content/manOfSteel.webp' as='image' />
+        <link rel='preload' href='/content/matrix.webp' as='image' />
+        <link rel='preload' href='/content/minions.webp' as='image' />
+        <link rel='preload' href='/content/pocahontas.webp' as='image' />
+        <link rel='preload' href='/content/scarface.webp' as='image' />
+        <link rel='preload' href='/content/screamVI.webp' as='image' />
+        <link rel='preload' href='/content/teletubbies.webp' as='image' />
+        <link rel='preload' href='/content/theIronGiant.webp' as='image' />
+        <link rel='preload' href='/content/theMandalorian.webp' as='image' />
+        <link rel='preload' href='/content/thePursuitOfHappiness.webp' as='image' />
+        <link rel='preload' href='/content/whiplash.webp' as='image' />
       </Head>
       <div className='text-center'>
         <h1 className='text-[30px] sm:text-[3.5vw] font-normal text-neutral-100 mb-8 text-center'>

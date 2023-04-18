@@ -29,3 +29,37 @@ body {
 .avatar-logo:hover img {
   outline: 3px solid white;
 }
+
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  height: 100%;
+  transform: translate(0, -55%);
+}
+
+.slick-prev:before {
+  content: '<' !important;
+  left: 5px;
+}
+.slick-next:before {
+  content: '>' !important;
+  right: 0px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: white;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.slick-slider.slick-initialized:hover > .slick-prev,
+.slick-slider.slick-initialized:hover > .slick-next {
+  opacity: 1;
+}
