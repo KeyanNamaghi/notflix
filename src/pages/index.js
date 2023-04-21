@@ -80,6 +80,9 @@ export default function Home() {
             <div className='flex w-full mt-4 text-neutral-400 text-xs text-left'>
               This page is not protected by Google reCAPTCHA to ensure you&apos;re probably a bot.
             </div>
+            <div className='flex w-full mt-4 text-neutral-400 text-xs text-left'>
+              Inspired by Jaythechou&apos;s photoshops on Twitter.
+            </div>
           </div>
         </div>
       </div>
