@@ -77,7 +77,7 @@ export default function Browse() {
                     height={152}
                     loading='eager'
                     src={`/content/${film}.webp`}
-                    alt='arrival'
+                    alt='film'
                     className='rounded'
                   />
                 </div>
