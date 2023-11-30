@@ -97,13 +97,13 @@ export default function Browse() {
           Github
         </a>
         <a className='text-neutral-100 text-[14px] mr-4' href='https://twitter.com/jaythechou'>
-          Art by Jaythechou
+          Art
         </a>
       </div>
-      <div className='flex-col items-center justify-center p-10 bg-neutral-900 min-h-screen'>
+      <div className='flex-col items-center justify-center p-6 pt-24 md:p-24 bg-neutral-900 min-h-screen'>
         {rows.map(({ title, films }) => (
           <div key={title}>
-            <h2 className='text-[12px] md:text-[1.4vw] text-neutral-100 mb-4 mt-12'>{title}</h2>
+            <h2 className='text-[12px] md:text-[1.4vw] text-neutral-100 mb-4  md:mt-12'>{title}</h2>
             <Slider {...settings} className=''>
               {films.map((film) => (
                 <div key={film} className='p-2 w-[272px]'>
